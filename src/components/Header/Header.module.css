@@ -1,0 +1,81 @@
+.container {
+  background-color: white;
+  margin-bottom: 10px;
+  position: relative;
+}
+.header {
+  position: sticky;
+  top: 0;
+  padding: 20px 60px 15px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  background: white;
+}
+.flex {
+  z-index: 100;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-right: 40px; */
+}
+
+.flex2 {
+  z-index: 100;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: start;
+  align-items: center;
+}
+.flex .company {
+  font-family: "Monoton", cursive;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.flex .avatar {
+  font-size: 28px;
+  color: rgb(121, 121, 121);
+  margin-top: 5px;
+}
+.subheader {
+  padding: 10px 60px 15px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+.main {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+
+.sub {
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 300;
+}
+
+.link , .activelink
+{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-left: 15px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+
+}
+
+.link:hover , .activelink:hover{
+  text-decoration: none;
+
+}
+.activelink{
+  color: #007bff;
+}

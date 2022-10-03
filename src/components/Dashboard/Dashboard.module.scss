@@ -1,0 +1,212 @@
+.dashboard {
+  width: 100%;
+  padding: 20px 40px;
+}
+.rowinfo {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.dinfo {
+  flex: 70%;
+  max-width: 70%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+  /* flex-grow: 1; */
+}
+
+.dlist {
+  flex: 30%;
+  width: 30%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  position: sticky;
+  top: 15px;
+}
+
+.uldlist {
+  list-style: none;
+  padding: 0;
+}
+
+.uldlist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+}
+.liuldlist {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 5px 5px;
+}
+
+.liuldlist:hover {
+  cursor: pointer;
+  background-color: rgb(219, 219, 219);
+}
+
+/*  */
+/*  */
+
+/*--------------------
+App
+--------------------*/
+$color: #e24040;
+.searchForm {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 15px rgba(121, 121, 121, 0.362);
+  background: #fff;
+  transition: all 0.3s ease;
+
+  &.focus {
+    box-shadow: 0 3px 100px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.searchInput {
+  position: absolute;
+  top: 10px;
+  left: 38px;
+  font-size: 14px;
+  background: none;
+  color: #5a6674;
+  width: 195px;
+  height: 20px;
+  border: none;
+  appearance: none;
+  outline: none;
+
+  &::-webkit-search-cancel-button {
+    appearance: none;
+  }
+}
+
+.searchButton {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none !important;
+  cursor: pointer;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    fill: #5a6674;
+  }
+}
+
+.searchOption {
+  position: absolute;
+  text-align: right;
+  top: 10px;
+  right: 15px;
+
+  div {
+    position: relative;
+    display: inline-block;
+    margin: 0 1px;
+    cursor: pointer;
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.01;
+      cursor: pointer;
+    }
+
+    span {
+      position: absolute;
+      display: block;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      background: #929aa3;
+      color: #fff;
+      font-size: 9px;
+      letter-spacing: 1px;
+      line-height: 1;
+      text-transform: uppercase;
+      padding: 4px 7px;
+      border-radius: 12px;
+      top: -18px;
+      transition: all 0.2s ease-in-out;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 4px solid #929aa3;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &:hover span {
+      opacity: 1;
+      top: -21px;
+    }
+
+    label {
+      display: block;
+      cursor: pointer;
+    }
+
+    svg {
+      height: 20px;
+      width: 20px;
+      fill: #5a6674;
+      opacity: 0.6;
+      transition: all 0.2s ease-in-out;
+      pointer-events: none;
+    }
+
+    &:hover svg {
+      opacity: 1;
+    }
+
+    input:checked + label svg {
+      fill: $color;
+      opacity: 0.9;
+    }
+
+    input:checked + label span {
+      background: $color;
+
+      &::after {
+        border-top-color: $color;
+      }
+    }
+  }
+}
+
+/*  */
+@media all and (max-width: 1300px) {
+  .dlist {
+    max-width: 300px;
+  }
+}

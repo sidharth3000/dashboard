@@ -1,0 +1,131 @@
+.outer {
+  /* background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 20px; */
+  width: 100%;
+}
+
+.namerow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.namerow .imageback {
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  margin: 0 30px 0 0;
+  background-color: rgb(240, 240, 240);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+.namerow .image {
+  width: 120px;
+  height: 120px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: start;
+  flex-grow: 1;
+/* margin-right: 20px; */
+}
+
+.namebutton {
+  flex-grow: 0;
+  flex-wrap: nowrap;
+}
+
+.subsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subinfo {
+  flex: 50%;
+  width: 50%;
+  flex-grow: 0;
+  padding: 20px;
+}
+
+.ulsubinfo {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+}
+.liulsubinfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 5px 0;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tags {
+  padding: 20px;
+  flex-grow: 0;
+  flex: 50%;
+  max-width: 50%;
+  border-left: 1px solid rgb(207, 207, 207);
+
+}
+
+.tagsul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.tagsli {
+  margin: 4px;
+  background-color: rgb(56, 55, 55);
+  color: white;
+  border: 0.5px solid #a8a8a8;
+  flex-grow: 0;
+  position: relative;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  user-select: none;
+}
+
+.active {
+  color: white;
+  border-radius: 3px;
+  background-color: rgb(21, 200, 21);
+  /*border: 1px solid rgb(6, 140, 6);
+  */font-size: 12px;
+  padding: 3px 7px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-top: 5px;
+}
